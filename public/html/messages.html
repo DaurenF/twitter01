@@ -1,0 +1,176 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/messages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/script.js"></script>
+    </head>
+    <body>
+        
+<!---Left block-->    
+<div class="sidebar">
+    <i class="fab fa-twitter"></i>
+    <div class="sidebaroption">
+        <span class="material-symbols-outlined">
+            home</span>
+        <h2><a href="/html/index2.html">Home</a></h2>
+    </div>
+
+
+    <div class="sidebaroption">
+        <span class="material-symbols-outlined">
+            search
+        </span>
+        <h2>Explore</h2>
+    </div>
+
+
+    <div class="sidebaroption">
+        <span class="material-symbols-outlined">
+            notifications
+        </span>
+        <h2>Notifications</h2>
+    </div>
+
+
+    <div class="sidebaroption active">
+        <span class="material-symbols-outlined">
+            mail
+        </span>
+        <h2><a href="/html/messages.html">Messages</a></h2>
+    </div>
+
+
+    <div class="sidebaroption">
+        <span class="material-symbols-outlined">
+            bookmark
+        </span>
+        <h2>Bookmark</h2>
+    </div>
+
+
+    <div class="sidebaroption">
+        <span class="material-symbols-outlined">
+            dynamic_form
+        </span>
+        <h2>Lists</h2>
+    </div>
+
+
+    <div class="sidebaroption">
+        <span class="material-symbols-outlined" onclick="/html/profile.html">
+            account_circle
+        </span>
+        <h2>Profile</h2>
+    </div>
+
+
+    <div class="sidebaroption">
+        <span class="material-symbols-outlined">
+            pending
+        </span>
+        <h2>More</h2>
+    </div>
+    <button class="sidebar_tweet">Tweet</button>
+</div>
+<!--LB end-->
+<!--Message start-->
+
+<div class="message_content">
+    <div class="message_header">
+            <form class="compose">
+                <textarea placeholder="Compose new Tweet..."></textarea>
+
+                <div class="count">
+                    <span class="count">140</span>
+                    <button class="send_button">Send</button>
+                </div>
+            </form>
+    </div>
+    <div class="tweets">
+        <div class="thread">
+            <div class="tweet">
+                <img src="/img/someonesmom.jpg">
+
+                <div class="body_tweet">
+                    <div class="title">@Mom</div>
+                    <div class="message">kak tam ucheba?</div>
+                </div>
+            </div>
+
+            <div class="replies">
+                <form class="compose">
+                    <textarea placeholder="Compose new Tweet..."></textarea>
+
+                    <div class="count">
+                        <span class="count">140</span>
+                        <button>Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script id="template-tweet" type="text/x-handlebars-template">
+            <div class="tweet">
+                <div class="body">
+                    <div class="title">{{ handle }}</div>
+                    <div class="message">{{ message }}</div>
+                </div>
+            </div>
+        </script>
+
+        <div class="thread">
+            <div class="tweet">
+                <img src="/img/me.jpg">
+
+                <div class="body">
+                    <div class="title">@ElnazAlmasuly</div>
+                    <div class="message">Hello my friends, I downloaded twitter!</div>
+                </div>
+            </div>
+
+            <div class="replies">
+                <div class="tweet">
+                    <img src="/img/zuckerberg.jpeg">
+
+                    <div class="body">
+                        <div class="title">@zuckerbergmeta</div>
+                        <div class="message">I will buy Tesla!</div>
+                    </div>
+                </div>
+
+                <div class="tweet">
+                    <img src="/img/elon.jpg">
+
+                    <div class="body">
+                        <div class="title">@ElonMask</div>
+                        <div class="message">Good choice!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Message end-->
+
+<div class="widgets">
+    <div class="widgets_input">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" placeholder="Search Twitter">
+    </div>
+    <div class="widget_container">
+        <h2>What's happening?</h2>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">we’re pumping <a href="https://twitter.com/hashtag/BTC?src=hash&amp;ref_src=twsrc%5Etfw">#BTC</a> <a href="https://t.co/e6aKFLswTL">pic.twitter.com/e6aKFLswTL</a></p>&mdash; Sheikh Roberto (@roberto_saudi) <a href="https://twitter.com/roberto_saudi/status/1582704662184357889?ref_src=twsrc%5Etfw">October 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    
+</div>
+</body>
+</html>
